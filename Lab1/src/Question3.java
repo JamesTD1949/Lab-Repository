@@ -20,13 +20,13 @@ public class Question3 {
 
         double area = length*breadth;
 
-        String output = String.format("Quotation for "+ name + "\n%-40s%.2f m.\n%-40s%.2f m.\n%-40s%.2f m.\n%-40s%.2f euro\n%-40s%.2f euro.","Length of room:",length,"Breadth of room:",breadth,"Total area of the room:",area,"Cost per square metre of carpet:",cost,"Total cost of carpet:",cost*area);
+        String output = String.format("Quotation for "+ name + "\n%-50s%.2f m.\n%-50s%.2f m.\n%-50s%.2f m.\n%-50s%.2f euro\n%-50s%.2f euro.","Length of room:",length,"Breadth of room:",breadth,"Total area of the room:",area,"Cost per square metre of carpet:",cost,"Total cost of carpet:",cost*area);
 
         JTextArea template = new JTextArea();
 
         template.append(output);
 
-        Font font = new Font("courier",Font.PLAIN,15);
+        Font font = new Font("monospaced",Font.PLAIN,15);
 
         template.setFont(font);
 
